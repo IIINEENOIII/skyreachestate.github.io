@@ -6,6 +6,9 @@
   <title>SkyReach Estate | Real Estate Investing Solutions in Texas</title>
   <meta name="description" content="SkyReach Estate helps homeowners sell with clarity and control—cash offers, creative finance options, and timeline-based solutions across Texas." />
   <link rel="stylesheet" href="assets/styles.css" />
+
+  <!-- Optional: basic SEO -->
+  <link rel="canonical" href="https://www.skyreachestate.com/" />
 </head>
 <body>
   <div class="nav">
@@ -35,8 +38,8 @@
         </p>
 
         <div style="display:flex;gap:12px;flex-wrap:wrap">
-          <a class="btn primary" href="contact.html">Get a no-obligation offer</a>
-          <a class="btn ghost" href="solutions.html">Explore solutions</a>
+          <a class="btn primary" href="#get-started">Get a no-obligation offer</a>
+          <a class="btn ghost" href="#resources">Explore resources</a>
         </div>
 
         <div class="badges">
@@ -54,17 +57,24 @@
           </div>
           <div class="note">
             <b>Fast contact:</b> <a href="mailto:BRANDON@SKYREACHESTATE.COM">BRANDON@SKYREACHESTATE.COM</a> •
-            <a href="tel:+18325550199">+1 (832) 705-4042</a>
+            <a href="tel:+18327054042">+1 (832) 705-4042</a>
           </div>
         </div>
       </div>
 
-      <div class="card fade-in">
+      <div class="card fade-in" id="get-started">
         <h2 style="margin-top:0">Get started</h2>
         <p class="sub" style="margin-top:0">Tell us what’s going on. We’ll recommend the cleanest path.</p>
 
-        <!-- Option A: keep mailto-only (no backend required) -->
-        <form class="form" action="mailto:BRANDON@SKYREACHESTATE.COM" method="post" enctype="text/plain">
+        <!-- Formspree (emails Brandon automatically; no email client opens) -->
+        <form class="form" action="https://formspree.io/f/abcdwxyz" method="POST">
+          <!-- Formspree enhancements -->
+          <input type="hidden" name="source" value="SkyReachEstate.com - Homepage" />
+          <input type="hidden" name="_subject" value="New Lead - SkyReachEstate.com" />
+          <input type="hidden" name="_redirect" value="https://www.skyreachestate.com/thanks.html" />
+          <!-- Honeypot spam field (leave hidden) -->
+          <input type="text" name="_gotcha" style="display:none" tabindex="-1" autocomplete="off" />
+
           <div class="form-row">
             <div class="field">
               <label>Name</label>
@@ -73,6 +83,21 @@
             <div class="field">
               <label>Phone</label>
               <input required name="phone" placeholder="(###) ###-####" />
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="field">
+              <label>Email (optional)</label>
+              <input name="email" type="email" placeholder="you@email.com" />
+            </div>
+            <div class="field">
+              <label>Best contact method</label>
+              <select name="contact_preference">
+                <option>Call me</option>
+                <option>Text me</option>
+                <option>Email me</option>
+              </select>
             </div>
           </div>
 
@@ -88,8 +113,12 @@
                 <option>Foreclosure / behind on payments</option>
                 <option>Bankruptcy / financial hardship</option>
                 <option>Inherited / probate</option>
+                <option>Divorce / separation</option>
+                <option>Job loss / medical bills</option>
+                <option>Liens / judgments / tax issues</option>
                 <option>Repairs needed / vacant</option>
                 <option>Tenant / landlord issues</option>
+                <option>Code violations / city issues</option>
                 <option>Need to sell fast</option>
                 <option>Not sure yet</option>
               </select>
@@ -105,9 +134,30 @@
             </div>
           </div>
 
+          <div class="form-row">
+            <div class="field">
+              <label>Occupancy</label>
+              <select name="occupancy">
+                <option>Owner-occupied</option>
+                <option>Tenant-occupied</option>
+                <option>Vacant</option>
+                <option>Not sure</option>
+              </select>
+            </div>
+            <div class="field">
+              <label>Condition</label>
+              <select name="condition">
+                <option>Move-in ready</option>
+                <option>Minor repairs</option>
+                <option>Major repairs</option>
+                <option>Not sure</option>
+              </select>
+            </div>
+          </div>
+
           <div class="field">
             <label>What would a win look like?</label>
-            <textarea name="details" placeholder="Example: stop foreclosure, avoid repairs, relocate, settle an estate, etc."></textarea>
+            <textarea name="details" placeholder="Example: stop foreclosure, avoid repairs, relocate, settle an estate, get out of payments, etc."></textarea>
           </div>
 
           <button class="btn primary" type="submit">Request a call</button>
@@ -122,6 +172,7 @@
     </div>
   </header>
 
+  <!-- Serhant-style: big offerings grid -->
   <section class="section">
     <div class="container">
       <div class="section-title">
@@ -135,32 +186,81 @@
       <div class="cards">
         <a class="tile fade-in" href="solutions.html#foreclosure">
           <h3>Foreclosure & late payments</h3>
-          <div class="meta">Stop the spiral: evaluate payoff, reinstatement, short sale viability, or a fast close.</div>
+          <div class="meta">Payoff review, reinstatement, short sale viability, or a fast close.</div>
         </a>
         <a class="tile fade-in" href="solutions.html#bankruptcy">
           <h3>Bankruptcy / hardship</h3>
-          <div class="meta">We work within court/attorney timelines and help you understand realistic sale options.</div>
+          <div class="meta">Work within court/attorney timelines with clear next steps.</div>
         </a>
         <a class="tile fade-in" href="creative-finance.html">
           <h3>Creative finance options</h3>
-          <div class="meta">When cash isn’t best: seller finance, subject-to, wrap solutions, and more (when appropriate).</div>
+          <div class="meta">Seller finance, subject-to, wraps—when appropriate and clearly explained.</div>
         </a>
         <a class="tile fade-in" href="solutions.html#inherited">
           <h3>Inherited / probate</h3>
-          <div class="meta">Help selling as-is, coordinating cleanout, and working through decision-makers.</div>
+          <div class="meta">As-is sale, cleanout coordination, and decision-maker alignment.</div>
         </a>
         <a class="tile fade-in" href="solutions.html#repairs">
           <h3>Repairs / vacant property</h3>
-          <div class="meta">As-is offers with transparent numbers. No contractors, no showings, no surprises.</div>
+          <div class="meta">As-is offers with transparent numbers—no contractors needed.</div>
         </a>
         <a class="tile fade-in" href="timelines.html">
           <h3>Timeline-based selling</h3>
-          <div class="meta">Choose your close date. We outline what happens in 7/14/30+ day scenarios.</div>
+          <div class="meta">Choose your close date. 7/14/30+ day scenarios explained.</div>
         </a>
       </div>
     </div>
   </section>
 
+  <!-- Serhant-style: "Resources" hub -->
+  <section class="section" id="resources">
+    <div class="container">
+      <div class="section-title">
+        <div>
+          <h2>Resources</h2>
+          <p>Clear, practical guides for sellers (no hype).</p>
+        </div>
+      </div>
+
+      <div class="cards">
+        <a class="tile fade-in" href="solutions.html#foreclosure">
+          <h3>Foreclosure basics</h3>
+          <div class="meta">What deadlines mean, what options typically exist, and what to do first.</div>
+        </a>
+        <a class="tile fade-in" href="solutions.html#bankruptcy">
+          <h3>Selling during bankruptcy</h3>
+          <div class="meta">How timelines and approvals can work. What documents may be needed.</div>
+        </a>
+        <a class="tile fade-in" href="creative-finance.html">
+          <h3>Creative finance explained</h3>
+          <div class="meta">Subject-to, wraps, seller financing—simple explanations + risks.</div>
+        </a>
+        <a class="tile fade-in" href="timelines.html">
+          <h3>How fast can you sell?</h3>
+          <div class="meta">7, 14, 30+ day closing paths and what affects speed.</div>
+        </a>
+        <a class="tile fade-in" href="solutions.html#inherited">
+          <h3>Inherited property checklist</h3>
+          <div class="meta">What heirs should gather and how to avoid delays.</div>
+        </a>
+        <a class="tile fade-in" href="solutions.html#repairs">
+          <h3>Selling as-is</h3>
+          <div class="meta">What “as-is” really means, and how buyers price repairs.</div>
+        </a>
+      </div>
+
+      <div class="callout fade-in" style="margin-top:16px">
+        <h3 style="margin:0">Not sure where you fit?</h3>
+        <div class="small">Tell us what’s going on and your timeline—we’ll map your best options.</div>
+        <div style="display:flex;gap:12px;flex-wrap:wrap">
+          <a class="btn primary" href="#get-started">Get started</a>
+          <a class="btn ghost" href="contact.html">Contact</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Process + differentiators (already had this; upgraded slightly) -->
   <section class="section">
     <div class="container split">
       <div class="card fade-in">
@@ -185,9 +285,56 @@
           <li><b>Privacy + respect:</b> confidential, non-judgmental, direct communication.</li>
           <li><b>Investor mindset:</b> fast decisions, clean closings, no games.</li>
         </ul>
-        <div style="display:flex;gap:12px;flex-wrap:wrap;margin-top:14px">
-          <a class="btn primary" href="contact.html">Talk to SkyReach</a>
-          <a class="btn ghost" href="about.html">Who we are</a>
+        <div class="note" style="margin-top:12px">
+          Want us to evaluate a creative option? We’ll explain the risks and only propose structures that fit your situation.
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQs -->
+  <section class="section">
+    <div class="container">
+      <div class="section-title">
+        <div>
+          <h2>FAQ</h2>
+          <p>Quick answers to common seller questions.</p>
+        </div>
+      </div>
+
+      <div class="cards">
+        <div class="tile fade-in">
+          <h3>How do you determine your offer?</h3>
+          <div class="meta">We look at location, condition, repairs, market demand, holding costs, and comparable sales—then we explain the math.</div>
+        </div>
+        <div class="tile fade-in">
+          <h3>Do I need to clean or repair anything?</h3>
+          <div class="meta">No. We buy as-is. Take what you want and leave the rest (we’ll confirm details upfront).</div>
+        </div>
+        <div class="tile fade-in">
+          <h3>How fast can you close?</h3>
+          <div class="meta">Depending on title and payoff timing, closings can happen in as little as 7–14 days. Some situations require more time.</div>
+        </div>
+        <div class="tile fade-in">
+          <h3>Can you help if I’m in foreclosure or bankruptcy?</h3>
+          <div class="meta">We can evaluate options quickly. In active bankruptcy or legal deadlines, we recommend involving qualified counsel.</div>
+        </div>
+        <div class="tile fade-in">
+          <h3>Will you list my home or do showings?</h3>
+          <div class="meta">No showings are required for an as-is investor sale. If a different strategy is better, we’ll tell you.</div>
+        </div>
+        <div class="tile fade-in">
+          <h3>Are creative finance options “safe”?</h3>
+          <div class="meta">They can help in specific cases, but they involve risk and must be documented correctly. We’ll explain pros/cons before anything moves forward.</div>
+        </div>
+      </div>
+
+      <div class="callout fade-in" style="margin-top:16px">
+        <h3 style="margin:0">Ready for a clear plan?</h3>
+        <div class="small">Send your address and timeline—we’ll respond quickly.</div>
+        <div style="display:flex;gap:12px;flex-wrap:wrap">
+          <a class="btn primary" href="#get-started">Request a call</a>
+          <a class="btn ghost" href="contact.html">Contact</a>
         </div>
       </div>
     </div>
@@ -202,7 +349,7 @@
         <div class="small">
           Real estate investing solutions for Texas homeowners. <br/>
           Email: <a href="mailto:BRANDON@SKYREACHESTATE.COM">BRANDON@SKYREACHESTATE.COM</a> •
-          Phone: <a href="tel:+1832705402">+1 (832) 705-4042</a>
+          Phone: <a href="tel:+18327054042">+1 (832) 705-4042</a>
         </div>
         <div class="small" style="margin-top:10px">
           © <span id="year"></span> SkyReach Estate. All rights reserved.
