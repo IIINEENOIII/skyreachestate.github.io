@@ -170,3 +170,11 @@ input:focus,select:focus,textarea:focus{border-color:#4f83ff}
   .luxe-hero-image{height:330px}
   .luxe-stats{grid-template-columns:1fr}
 }
+
+
+.pro-gallery{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+.pro-gallery.two-up{grid-template-columns:1fr 1fr}
+.pro-photo{margin:0;border-radius:18px;overflow:hidden;border:1px solid var(--line);box-shadow:var(--shadow);background:#fff}
+.pro-photo img{width:100%;height:260px;object-fit:cover}
+@media (max-width:980px){.pro-gallery{grid-template-columns:1fr 1fr}.pro-gallery.two-up{grid-template-columns:1fr}.pro-photo img{height:220px}}
+@media (max-width:640px){.pro-gallery{grid-template-columns:1fr}}
