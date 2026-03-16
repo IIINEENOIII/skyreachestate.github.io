@@ -4,10 +4,26 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Contact | SkyReach Estate</title>
-  <meta name="description" content="Contact SkyReach Estate for a confidential, no-obligation offer or to discuss your situation." />
+  <meta name="description" content="Request your options and receive a callback from SkyReach Estate." />
   <link rel="stylesheet" href="assets/styles.css" />
 </head>
 <body>
+  <header class="site-header"><div class="container nav"><a class="brand" href="index.html"><span class="logo">SR</span><span>SkyReach Estate</span></a><nav class="links"><a href="index.html">Home</a><a href="solutions.html">Solutions</a><a href="timelines.html">Timelines</a><a href="about.html">About</a><a href="contact.html">Contact</a></nav></div></header>
+  <section class="section"><div class="container"><h1>Contact</h1><p class="lead">Send your details and we’ll get back to you quickly.</p></div></section>
+  <section class="section alt"><div class="container">
+    <form class="card form" action="https://formspree.io/f/mvzbypqq" method="POST">
+      <input type="hidden" name="source" value="SkyReachEstate.com - Contact" />
+      <input type="hidden" name="_subject" value="New Lead - SkyReachEstate.com" />
+      <input type="hidden" name="_redirect" value="https://www.skyreachestate.com/thanks.html" />
+      <input type="text" name="_gotcha" style="display:none" tabindex="-1" autocomplete="off" />
+      <label>Name<input required name="name" placeholder="Your name" /></label>
+      <label>Phone<input required name="phone" placeholder="(###) ###-####" /></label>
+      <label>Property Address<input required name="address" placeholder="123 Main St, City, TX" /></label>
+      <label>Situation<select name="situation"><option>Foreclosure pressure</option><option>Inherited property</option><option>Repairs needed</option><option>Need to sell quickly</option><option>Other</option></select></label>
+      <button type="submit">Request Callback</button>
+    </form>
+  </div></section>
+  <footer class="footer"><div class="container"><p>© <span id="year"></span> SkyReach Estate</p></div></footer><script src="assets/site.js"></script>
 
   <!-- NAV -->
   <div class="nav">
