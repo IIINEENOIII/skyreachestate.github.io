@@ -3,45 +3,81 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Thanks | SkyReach Estate</title>
-  <meta name="description" content="Thanks for contacting SkyReach Estate." />
+  <title>Thank You | Skyreach Estate</title>
+  <meta name="description" content="Thanks for contacting Skyreach Estate. We'll review your message and reach out soon." />
+  <link rel="icon" href="assets/favicon.png" type="image/png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="assets/styles.css" />
 </head>
 <body>
-  <div class="nav">
-    <div class="container nav-inner">
-      <a class="brand" href="index.html"><div class="logo">SR</div><div>SkyReach Estate</div></a>
-      <div class="nav-links">
-        <a class="pill" href="solutions.html">Solutions</a>
-        <a class="pill" href="timelines.html">Timelines</a>
-        <a class="pill" href="about.html">About</a>
-        <a class="btn primary" href="contact.html">Contact</a>
+
+  <header class="site-nav" id="siteNav">
+    <div class="wrap nav-inner">
+      <a class="brand" href="index.html" aria-label="Skyreach Estate — home">
+        <img class="brand-logo" src="assets/logo.jpg" alt="Skyreach Estate logo" />
+      </a>
+      <nav class="nav-links" aria-label="Primary">
+        <a class="nav-link" href="solutions.html">Solutions</a>
+        <a class="nav-link" href="timelines.html">Timelines</a>
+        <a class="nav-link" href="creative-finance.html">Creative Finance</a>
+        <a class="nav-link" href="about.html">About</a>
+      </nav>
+      <div class="nav-cta">
+        <a class="nav-phone" href="tel:+18327054042">(832) 705-4042</a>
+        <a class="btn btn-gold" href="contact.html">Get my options</a>
       </div>
-    </div>
-  </div>
-
-  <header class="hero page-hero">
-    <div class="container">
-      <div class="card fade-in">
-        <h1 style="margin-top:0">You’re in — we got your message.</h1>
-        <p class="sub">We’ll review what you sent and reach out soon. If it’s urgent, call or text now.</p>
-
-        <div class="note">
-          <b>Email:</b> <a href="mailto:BRANDON@SKYREACHESTATE.COM">BRANDON@SKYREACHESTATE.COM</a><br/>
-          <b>Phone:</b> <a href="tel:+18327054042">+1 (832) 705-4042</a>
-        </div>
-
-        <div style="display:flex;gap:12px;flex-wrap:wrap;margin-top:14px">
-          <a class="btn primary" href="index.html#get-started">Submit another address</a>
-          <a class="btn ghost" href="index.html">Back to home</a>
-        </div>
-      </div>
+      <button class="menu-toggle" id="menuToggle" aria-label="Open menu" aria-expanded="false">
+        <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+      </button>
     </div>
   </header>
 
-  <footer class="footer">
-    <div class="container">
-      <p>© <span id="year"></span> SkyReach Estate</p>
+  <main>
+    <section class="page-hero" style="min-height:70vh;display:flex;align-items:center">
+      <div class="wrap" style="width:100%">
+        <div class="form-panel reveal in" style="max-width:640px;margin-inline:auto;text-align:center">
+          <span class="eyebrow" style="justify-content:center">Message received</span>
+          <h1 style="font-size:clamp(2rem,4vw,2.8rem)">You're in — we got your message.</h1>
+          <p class="lede" style="margin-inline:auto">We'll review what you sent and reach out soon — usually the same day. If it's urgent, don't wait on us: call or text now.</p>
+          <div class="btn-row" style="justify-content:center">
+            <a class="btn btn-gold" href="tel:+18327054042">Call (832) 705-4042</a>
+            <a class="btn btn-outline" href="index.html">Back to home</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap footer-grid">
+      <div>
+        <span class="footer-logo"><img src="assets/logo.jpg" alt="Skyreach Estate logo" /></span>
+        <p class="footer-blurb">Skyreach Estate helps Houston-area homeowners navigate foreclosure and difficult property situations with clear options and a confidential, no-pressure process.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Explore</h4>
+        <ul>
+          <li><a href="solutions.html">Solutions</a></li>
+          <li><a href="timelines.html">Timelines</a></li>
+          <li><a href="creative-finance.html">Creative Finance</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <ul>
+          <li><a href="tel:+18327054042">+1 (832) 705-4042</a></li>
+          <li><a href="mailto:BRANDON@SKYREACHESTATE.COM">BRANDON@SKYREACHESTATE.COM</a></li>
+          <li>Houston, Texas</li>
+        </ul>
+      </div>
+    </div>
+    <div class="wrap footer-bottom">
+      <span>© <span id="year"></span> Skyreach Estate. All rights reserved.</span>
+      <span class="footer-disclaimer">This website is for informational purposes only and does not provide legal, tax, or financial advice.</span>
     </div>
   </footer>
 
